@@ -12,17 +12,23 @@ Buon lavoro! */
 
 // ! Raccolta dati
 //* Chiedere all'utente il numero di km da percorrere;
-let kmDaPercorrere = prompt ("Quanti km dista la destinazione da raggiungere?");
+let kmDaPercorrere = prompt ("inserisci quanti km dista la destinazione da raggiungere in caratteri numerici");
 kmDaPercorrere = parseInt(kmDaPercorrere);
 console.log(kmDaPercorrere);
+if (isNaN(kmDaPercorrere)) {
+    alert('inserire esclusivamente caratteri numerici')
+}
 //* Chiedere l'età del passeggero;
-let etàPasseggero = prompt ("inserisci la tua età anagrafica");
+let etàPasseggero = prompt ("inserisci la tua età anagrafica in caratteri numerici");
 etàPasseggero = parseInt(etàPasseggero);
 console.log(etàPasseggero);
+if (isNaN(etàPasseggero)) {
+    alert('inserire esclusivamente caratteri numerici')
+}
+//*
+
+// ! Elaborazione
 //* Calcolare il prezzo totale del viaggio in base ai km(0.21 € al km);
 //* sconto 20% minnorenni;
-//* scpnto 40% over 65;
-//*
-// ! Elaborazione
-
+//* sconto 40% over 65;
 // ! Output
