@@ -31,7 +31,16 @@ const CostoPerKm = 0.21;
 let KmForPrice = (kmDaPercorrere * CostoPerKm);
 console.log(KmForPrice);
 //* sconto 20% minnorenni;
+let FirstCalcT = (KmForPrice * 20 ) ;
+let SecondCalcT = (FirstCalcT / 100);
+let eighteenMinorDiscount =(KmForPrice - SecondCalcT);
+console.log(eighteenMinorDiscount);
+
 
 //* sconto 40% over 65;
+let FirstCalc = (KmForPrice * 40 ) ;
+let SecondCalc = (FirstCalc / 100);
+let sixtyFiveOverDiscount =(KmForPrice - SecondCalc);
+console.log(sixtyFiveOverDiscount);
 
 // ! Output
