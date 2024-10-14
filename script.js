@@ -28,7 +28,8 @@ if (isNaN(etàPasseggero)) {
 // ! Elaborazione
 //* Calcolare il prezzo totale del viaggio in base ai km(0.21 € al km);
 const CostoPerKm = 0.21;
-console.log(kmDaPercorrere * CostoPerKm);
+let KmForPrice = (kmDaPercorrere * CostoPerKm);
+console.log(KmForPrice);
 //* sconto 20% minnorenni;
 
 //* sconto 40% over 65;
